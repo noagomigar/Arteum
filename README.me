@@ -1,85 +1,36 @@
 # Arteum 🎨
-
-An Android app to explore and save artworks from the [Art Institute of Chicago](https://www.artic.edu/) public API.
-
----
+An art browsing app for Android built with Kotlin and Jetpack Compose.
+Explore thousands of artworks from the Art Institute of Chicago, search by title, view full details, and save your favourite pieces.
 
 ## Features
-
-- **Browse** a curated collection of artworks from the Art Institute of Chicago
-- **Search** artworks by title in real time
-- **Detail view** with full artwork info: artist, date, origin, medium and description
-- **Favorites** — save and manage your favourite pieces locally
-- **List / Grid** display mode toggle
-- **Dark mode** support
-- **Splash screen**
-
----
+- Browse a curated collection from the [Art Institute of Chicago](https://www.artic.edu/) public API
+- Real-time search by artwork title
+- Detail view with artist, date, origin, medium and description
+- Save and manage your favourite pieces locally with Room
+- Toggle between List and Grid display modes
+- Dark mode support
 
 ## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Language | Kotlin |
-| UI | Jetpack Compose |
-| Navigation | Navigation3 |
-| Networking | Retrofit + Gson |
-| Image loading | Coil |
-| Local storage | Room |
-| Architecture | MVVM |
-| Preferences | SharedPreferences |
-
----
-
-## Architecture
-
-```
-com.example.apilistapp/
-├── data/
-│   ├── local/          # Room database, DAOs, entities
-│   ├── mapper/         # DTO → Domain mappers
-│   ├── preferences/    # Settings persistence
-│   ├── remote/         # Retrofit API interface, DTOs
-│   └── repository/     # Data repositories
-├── domain/             # Domain models
-├── ui/
-│   ├── components/     # Reusable composables
-│   ├── navigation/     # Routes, NavHost, BottomBar
-│   ├── screens/        # detail / favorites / list / settings
-│   └── theme/          # Colors, typography, theme
-└── utils/              # Extension functions
-```
-
----
-
-## API
-
-This app uses the **Art Institute of Chicago** public API — no API key required.
-
-- Base URL: `https://api.artic.edu/api/v1/`
-- Images: `https://www.artic.edu/iiif/2/{image_id}/full/843,/0/default.jpg`
-
----
+- **Language:** Kotlin
+- **UI:** Jetpack Compose + Material 3
+- **Architecture:** MVVM + Clean Architecture
+- **State management:** StateFlow + collectAsState
+- **Navigation:** Navigation3 with type-safe routes
+- **Networking:** Retrofit + Gson
+- **Image loading:** Coil
+- **Local storage:** Room
+- **Preferences:** SharedPreferences
 
 ## Getting Started
-
 1. Clone the repository
 ```bash
-git clone https://github.com/noagomigar/arteum.git
+git clone https://github.com/noagomigar/Arteum.git
 ```
-2. Open the project in **Android Studio Hedgehog** or later
-3. Run on an emulator or physical device (API 26+)
+2. Open the project in Android Studio Hedgehog or later
+3. Run on an emulator or physical device (Android 8.0+)
 
-No API keys or extra configuration needed.
-
----
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
+No API keys or extra configuration needed, the Art Institute of Chicago API is fully public.
 
 ## Author
-
-Noa Gomez I Garcia [GitHub](https://github.com/noagomigar)
+Noa Gomez I Garcia
+[GitHub](https://github.com/noagomigar)
