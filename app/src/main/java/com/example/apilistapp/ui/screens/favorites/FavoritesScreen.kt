@@ -25,6 +25,8 @@ fun FavouritesScreen(onNavigateToDetail: (Int) -> Unit) {
 
     val cs = MaterialTheme.colorScheme
 
+    LaunchedEffect(Unit) { viewModel.loadFavorites() }
+
     Column(
         modifier = Modifier
             .fillMaxSize()

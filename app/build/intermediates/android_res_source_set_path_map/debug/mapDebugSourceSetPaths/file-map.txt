@@ -1,0 +1,7 @@
+com.example.apilistapp-pngs-0 C:\Users\Rennyx\StudioProjects\Arteum\app\build\generated\res\pngs\debug
+com.example.apilistapp-updated_navigation_xml-1 C:\Users\Rennyx\StudioProjects\Arteum\app\build\generated\updated_navigation_xml\debug
+com.example.apilistapp-packageDebugResources-2 C:\Users\Rennyx\StudioProjects\Arteum\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.apilistapp-packageDebugResources-3 C:\Users\Rennyx\StudioProjects\Arteum\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.apilistapp-debug-4 C:\Users\Rennyx\StudioProjects\Arteum\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.apilistapp-debug-5 C:\Users\Rennyx\StudioProjects\Arteum\app\src\debug\res
+com.example.apilistapp-main-6 C:\Users\Rennyx\StudioProjects\Arteum\app\src\main\res

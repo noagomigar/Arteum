@@ -18,20 +18,19 @@ fun ListScreenNavigation(settings: SettingsViewModel) {
         entryProvider = entryProvider {
 
             entry<ListNestedRoute.List> {
-                ListScreen(
-                    settingsViewModel = settings,
-                    onNavigateToDetail = { artworkId ->
-                        listBackStack.add(ListNestedRoute.Detail(artworkId))
-                    }
-                )
+                ListScreen(settings) { artworkId ->
+                    listBackStack.add(
+                        ListNestedRoute.Detail(
+                            artworkId
+                        )
+                    )
+                }
             }
 
             entry<ListNestedRoute.Detail> { nestedRoute ->
                 DetailScreen(
-                    artworkId = nestedRoute.artworkId,
-                    onNavigateBack = { listBackStack.removeLastOrNull() }
-                )
+                    artworkId = nestedRoute.artworkId
+                ) { listBackStack.removeLastOrNull() }
             }
-        }
-    )
+        })
 }
