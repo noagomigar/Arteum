@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Arteum" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.Arteum.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#F7F9FB</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Arteum</item>
+    </style>
+</resources>

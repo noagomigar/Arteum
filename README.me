@@ -1,0 +1,85 @@
+# Arteum 🎨
+
+An Android app to explore and save artworks from the [Art Institute of Chicago](https://www.artic.edu/) public API.
+
+---
+
+## Features
+
+- **Browse** a curated collection of artworks from the Art Institute of Chicago
+- **Search** artworks by title in real time
+- **Detail view** with full artwork info: artist, date, origin, medium and description
+- **Favorites** — save and manage your favourite pieces locally
+- **List / Grid** display mode toggle
+- **Dark mode** support
+- **Splash screen**
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Language | Kotlin |
+| UI | Jetpack Compose |
+| Navigation | Navigation3 |
+| Networking | Retrofit + Gson |
+| Image loading | Coil |
+| Local storage | Room |
+| Architecture | MVVM |
+| Preferences | SharedPreferences |
+
+---
+
+## Architecture
+
+```
+com.example.apilistapp/
+├── data/
+│   ├── local/          # Room database, DAOs, entities
+│   ├── mapper/         # DTO → Domain mappers
+│   ├── preferences/    # Settings persistence
+│   ├── remote/         # Retrofit API interface, DTOs
+│   └── repository/     # Data repositories
+├── domain/             # Domain models
+├── ui/
+│   ├── components/     # Reusable composables
+│   ├── navigation/     # Routes, NavHost, BottomBar
+│   ├── screens/        # detail / favorites / list / settings
+│   └── theme/          # Colors, typography, theme
+└── utils/              # Extension functions
+```
+
+---
+
+## API
+
+This app uses the **Art Institute of Chicago** public API — no API key required.
+
+- Base URL: `https://api.artic.edu/api/v1/`
+- Images: `https://www.artic.edu/iiif/2/{image_id}/full/843,/0/default.jpg`
+
+---
+
+## Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/noagomigar/arteum.git
+```
+2. Open the project in **Android Studio Hedgehog** or later
+3. Run on an emulator or physical device (API 26+)
+
+No API keys or extra configuration needed.
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## Author
+
+Noa Gomez I Garcia [GitHub](https://github.com/noagomigar)
