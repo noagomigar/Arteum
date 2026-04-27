@@ -9,6 +9,10 @@
 **Arteum** es una aplicación Android para explorar obras de arte del Art Institute of Chicago, construida con Kotlin y Jetpack Compose.
 Navega por la colección, busca por título, consulta todos los detalles de cada obra y guarda tus favoritas.
 
+## Descargar
+
+[⬇️ Descargar APK](https://github.com/noagomigar/Arteum/releases/download/v1.0.1/Arteum.apk)
+
 ### **Características Principales**
 * Exploración de la colección del [Art Institute of Chicago](https://www.artic.edu/) mediante su API pública.
 * Búsqueda en tiempo real por título de obra.
@@ -49,6 +53,8 @@ Noa Gomez I Garcia
 **Arteum** és una aplicació Android per explorar obres d'art de l'Art Institute of Chicago, construïda amb Kotlin i Jetpack Compose.
 Navega per la col·lecció, cerca per títol, consulta tots els detalls de cada obra i desa les teves favorites.
 
+[⬇️ Descarregar APK](https://github.com/noagomigar/Arteum/releases/download/v1.0.1/Arteum.apk)
+
 ### **Característiques Principals**
 * Exploració de la col·lecció de l'[Art Institute of Chicago](https://www.artic.edu/) mitjançant la seva API pública.
 * Cerca en temps real per títol d'obra.
@@ -88,6 +94,8 @@ Noa Gomez I Garcia
 
 **Arteum** is an Android app for exploring artworks from the Art Institute of Chicago, built with Kotlin and Jetpack Compose.
 Browse the collection, search by title, view full details of each piece, and save your favourites.
+
+[⬇️ Download APK](https://github.com/noagomigar/Arteum/releases/download/v1.0.1/Arteum.apk)
 
 ### **Main Features**
 * Browse the [Art Institute of Chicago](https://www.artic.edu/) collection via its public API.
